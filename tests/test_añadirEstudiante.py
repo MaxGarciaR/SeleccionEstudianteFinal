@@ -1,7 +1,7 @@
 from faker import Faker
 import random
 import unittest
-'''Importar la logica de añadir estudiante'''
+from src.seleccionestudiantefinal.logica.AñadirEstudiante import AñadirEstudiante
 from src.seleccionestudiantefinal.modelo.Estudiante import Estudiante, Elegible
 from src.seleccionestudiantefinal.modelo.declarative_base import Session
 
