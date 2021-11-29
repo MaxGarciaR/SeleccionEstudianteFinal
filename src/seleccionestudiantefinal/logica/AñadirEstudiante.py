@@ -9,7 +9,7 @@ class AñadirEstudiante():
         busqueda = session.query(Estudiante).filter(Estudiante.apellidoMaterno==apellidoPaterno).all()
         if len(busqueda) == 0:
             estudiante = Estudiante(apellidoPaterno=apellidoPaterno, apellidoMaterno=apellidoMaterno,nombres=nombres,elegible=elegible)
-            session.add(Estudiante)
+            session.add(estudiante)
             session.commit()
             return True
         else:
